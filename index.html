@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Day in Nanjing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="desktop">
+    <div class="window">
+      <div class="titlebar"><span>nanjing.exe</span><span class="tbtns"><i>_</i><i>□</i><i>x</i></span></div>
+      <div class="screen">
+        <canvas id="game" width="320" height="180"></canvas>
+        <div id="overlay">
+          <h1>NANJING</h1>
+          <p>A DAY IN MY HOMETOWN</p>
+          <button id="start" class="btn">START</button>
+          <small>SOUND ON · SCROLL TO WALK</small>
+        </div>
+        <div id="hint">SCROLL ↓ TO WALK</div>
+      </div>
+    </div>
+    <div class="taskbar">
+      <button class="btn" id="left">◀</button>
+      <button class="btn" id="right">▶</button>
+      <button class="btn" id="pp">PLAY</button>
+      <button class="btn" id="mute">SOUND ON</button>
+      <input type="range" id="vol" min="0" max="1" step="0.05" value="0.8" aria-label="Volume">
+      <div class="track"><div id="bar"></div></div>
+      <div id="clock">07:00 AM</div>
+    </div>
+  </div>
+  <audio id="bird" src="audio/bird.m4a" loop preload="auto"></audio>
+  <audio id="sprinklertruck" src="audio/sprinklertruck.m4a" loop preload="auto"></audio>
+  <audio id="market" src="audio/market.m4a" loop preload="auto"></audio>
+  <audio id="motorcycle" src="audio/motorcycle.m4a" loop preload="auto"></audio>
+  <audio id="guzheng" src="audio/guzheng.m4a" loop preload="auto"></audio>
+  <audio id="river" src="audio/river.m4a" loop preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
